@@ -5,11 +5,15 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:size=10:antialias=true:autohint=true";
+static char *font = "Roboto Mono:size=11:antialias=true:autohint=true";
 static char *font2[] = {
-	"JoyPixels:size=10:antialias=true:autohint=true",
-	"Font Awesome 5 Free:size=10:antialias=true:autohint=true",
-	"Font Awesome 5 Brands:size=10:antialias=true:autohint=true",
+    "Font Awesome 5 Free:size=12:antialias=true:autohint=true",
+    "Font Awesome 5 Brands:size=12:antialias=true:autohint=true",
+    "FontAwesome:size=12:antialias=true:autohint=true",
+    "icomoon:size=12:antialias=true:autohint=true",
+    "octicons:size=12:antialias=true:autohint=true",
+    "Pomodoro:size=12:antialias=true:autohint=true",
+    "JoyPixels:size=12:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -37,7 +41,7 @@ static float chscale = 1.0;
  *
  * More advanced example: L" `'\"()[]{}"
  */
-wchar_t *worddelimiters = L" ";
+wchar_t *worddelimiters = L" `'\"()[]{}";
 
 /* selection timeouts (in milliseconds) */
 static unsigned int doubleclicktimeout = 300;
@@ -92,10 +96,10 @@ char *termname = "st-256color";
  *
  *	stty tabs
  */
-unsigned int tabspaces = 8;
+unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;           //< alpha value used when the window is focused.
+float alpha = 0.87;           //< alpha value used when the window is focused.
 float alphaUnfocussed = 0.5; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
@@ -130,7 +134,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 259;
-unsigned int defaultbg = 258;
+unsigned int defaultbg = 0;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
@@ -147,8 +151,8 @@ static unsigned int cursorshape = 2;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 100;
+static unsigned int rows = 27;
 
 /*
  * Default colour and shape of the mouse cursor
