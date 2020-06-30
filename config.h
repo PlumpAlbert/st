@@ -5,15 +5,18 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Roboto Mono:size=11:antialias=true:autohint=true";
+static char *font = "JetBrains Mono:size=10:antialias=true:autohint=true";
 static char *font2[] = {
-    "Font Awesome 5 Free:size=12:antialias=true:autohint=true",
-    "Font Awesome 5 Brands:size=12:antialias=true:autohint=true",
-    "FontAwesome:size=12:antialias=true:autohint=true",
-    "icomoon:size=12:antialias=true:autohint=true",
-    "octicons:size=12:antialias=true:autohint=true",
-    "Pomodoro:size=12:antialias=true:autohint=true",
-    "JoyPixels:size=12:antialias=true:autohint=true",
+    "JoyPixels:size=10:antialias=true:autohint=true",
+    "EmojiOne:size=10:antialias=true:autohint=true",
+    "Braille:size=10:antialias=true:autohint=true",
+    "PowerlineSymbols:size=10:antialias=true:autohint=true",
+    "Font Awesome 5 Free:size=10:antialias=true:autohint=true",
+    "Font Awesome 5 Brands:size=10:antialias=true:autohint=true",
+    "FontAwesome:size=10:antialias=true:autohint=true",
+    "icomoon:size=10:antialias=true:autohint=true",
+    "octicons:size=10:antialias=true:autohint=true",
+    "Pomodoro:size=10:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -152,7 +155,7 @@ static unsigned int cursorshape = 2;
  */
 
 static unsigned int cols = 100;
-static unsigned int rows = 27;
+static unsigned int rows = 30;
 
 /*
  * Default colour and shape of the mouse cursor
@@ -252,7 +255,7 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_c,           clipcopy,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
-	{ XK_ANY_MOD,		Button2,	selpaste,	{.i =  0} },
+	{ XK_ANY_MOD,		        Button2,	selpaste,	{.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
 	{ MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
