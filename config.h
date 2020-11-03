@@ -5,18 +5,20 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrains Mono:size=10:antialias=true:autohint=true";
+static char *font = "JetBrainsMono Nerd Font:size=12:antialias=true:autohint=true";
 static char *font2[] = {
-    "JoyPixels:size=10:antialias=true:autohint=true",
-    "EmojiOne:size=10:antialias=true:autohint=true",
-    "Braille:size=10:antialias=true:autohint=true",
-    "PowerlineSymbols:size=10:antialias=true:autohint=true",
-    "Font Awesome 5 Free:size=10:antialias=true:autohint=true",
-    "Font Awesome 5 Brands:size=10:antialias=true:autohint=true",
-    "FontAwesome:size=10:antialias=true:autohint=true",
-    "icomoon:size=10:antialias=true:autohint=true",
-    "octicons:size=10:antialias=true:autohint=true",
-    "Pomodoro:size=10:antialias=true:autohint=true",
+    "Symbols Nerd Font:size=12:antialias=true:autohint=true",
+    "Noto Color Emoji:size=12:antialias=true:autohint=true",
+    "EmojiOne:size=12:antialias=true:autohint=true",
+    "Braille:size=12:antialias=true:autohint=true",
+    "PowerlineSymbols:size=12:antialias=true:autohint=true",
+    "Font Awesome 5 Free:size=12:antialias=true:autohint=true",
+    "Font Awesome 5 Brands:size=12:antialias=true:autohint=true",
+    "FontAwesome:size=12:antialias=true:autohint=true",
+    "icomoon:size=12:antialias=true:autohint=true",
+    "octicons:size=12:antialias=true:autohint=true",
+    "Pomodoro:size=12:antialias=true:autohint=true",
+    "monospace:size=12:antialias=true:autohint=true",
 };
 static int borderpx = 2;
 
@@ -103,7 +105,7 @@ unsigned int tabspaces = 4;
 
 /* bg opacity */
 float alpha = 0.87;           //< alpha value used when the window is focused.
-float alphaUnfocussed = 0.5; //< alpha value used when the focus is lost
+float alphaUnfocussed = 0.87; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -137,7 +139,7 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 unsigned int defaultfg = 259;
-unsigned int defaultbg = 0;
+unsigned int defaultbg = 258;
 static unsigned int defaultcs = 256;
 static unsigned int defaultrcs = 257;
 
@@ -316,7 +318,7 @@ static KeySym mappedkeys[] = { -1 };
  */
 static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;
 
-/*  
+/*
  * Override mouse-select while mask is active (when MODE_MOUSE is set).
  * Note that if you want to use ShiftMask with selmasks, set this to an other
  * modifier, set to 0 to not use it.
